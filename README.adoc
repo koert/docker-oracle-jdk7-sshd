@@ -1,0 +1,24 @@
+docker-oracle-jdk7-sshd
+=======================
+
+Base docker image with Oracle JDK 7 and sshd
+
+Usage
+-----
+
+To create the image `oracle-jdk7-sshd`, execute the following command:
+
+	docker build -t oracle-jdk7-sshd .
+
+To run the image and bind to port:
+
+	docker run -p 2022:22 -d oracle-jdk7-sshd
+
+Run with host networking:
+
+	docker run --net=host -d oracle-jdk7-sshd
+	
+
+
+
+
